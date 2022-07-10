@@ -546,7 +546,7 @@
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
-    height: 40vh;
+    max-height: 56vh;
     overflow-y: auto;
 }
 
@@ -758,6 +758,7 @@
     background-color: var(--white-color);
     display: none;
     animation: fadeIn ease-in 0.3s;
+    z-index: 1;
 }
 
 .header__search-option-item {
@@ -1131,6 +1132,8 @@
 .footer__top {
     padding: 36px 0;
     border-top: 4px solid #d0011b;
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    margin-bottom: 120px;
 }
 .footer__prove {
     display: flex;
